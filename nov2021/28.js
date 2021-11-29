@@ -60,10 +60,3 @@ var mergeTwoLists = function (list1, list2) {
 };
 
 module.exports = mergeTwoLists;
-
-/* 
-Note: 
-I overestimated the amount of work needed for a solution. I was knee deep in defining classes and helper functions when I 
-stopped to check how other coders had accessed the lists in the params. This led to the solution above being pulled from 
-another user for me to look over and understand. I definitely need to work on linked lists a lot.
-*/
