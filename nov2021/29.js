@@ -96,15 +96,11 @@ list1.addNode(5);
 list1.addNode(6);
 list1.addNode(51);
 
-console.log("list1 size", list1.getSize());
-
 let list2 = new LinkedList();
 
 list2.addNode(-51);
 list2.addNode(0);
 list2.addNode(22);
-
-console.log("list2 size", list2.getSize());
 
 // here we actually start building the solution for the original problem
 const mergeTwoLists = (list1, list2) => {
@@ -124,8 +120,8 @@ const mergeTwoLists = (list1, list2) => {
   let list1Current = list1.head;
   let list2Current = list2.head;
 
-  while (list1Current?.val || list2Current?.val) {
-    if (list1Current?.val && list2Current?.val) {
+  while (list1Current?.val !== null || list2Current?.val !== null) {
+    if (list1Current !== null && list2Current !== null) {
       if (list1Current.val <= list2Current.val) {
         result.addNode(list1Current);
         list1Current = list1Current.next;
@@ -133,20 +129,17 @@ const mergeTwoLists = (list1, list2) => {
         result.addNode(list2Current);
         list2Current = list2Current.next;
       }
+    } else if (list1Current === null && list2Current !== null) {
+      result.addNode(list2Current);
+      list2Current = list2Current.next;
+    } else if (list2Current === null && list1Current !== null) {
+      result.addNode(list1Current);
+      list1Current = list1Current.next;
     } else {
-      if (list1Current === null) {
-        result.addNode(list2Current);
-        list2Current = list2Current.next;
-      } else {
-        result.addNode(list1Current);
-        list1Current = list1Current.next;
-      }
+      console.log("missed all catches");
+      break;
     }
   }
-  console.log(result);
-  console.log("head", result.getHead());
-  console.log("tail", result.getLast());
-  console.log("result size", result.getSize());
   return result.head;
 };
 
