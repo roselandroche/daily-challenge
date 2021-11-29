@@ -24,41 +24,130 @@ class Node {
   }
 
   // helper functions
-  // add new node
-  addNode(newNode) {
-    let newNext = new Node(newNode);
-    if (this.val !== null) {
-      let current = this.val;
-      while (current.next) {
-        current = current.next;
-      }
-      current.next = newNext;
-    } else {
-      this.val = newNext;
-    }
+  // add new next
+  setNext(newNext) {
+    this.next = newNext;
   }
-  // get head value
 }
-
-let foo = new Node();
-console.log(foo);
-foo.addNode(7);
-console.log(foo);
-foo.addNode(20);
-console.log(foo);
-foo.addNode(44);
-console.log(foo);
-foo.addNode(16);
-console.log(foo);
 
 // define linked list
 class LinkedList {
-  constructor() {
+  constructor(head = null) {
     this.head = head;
-    this.size = 0;
   }
 
   // helper functions
   // add element to list
+  addNode(element) {
+    let node = new Node(element);
+    let current;
+
+    if (this.head === null) {
+      this.head = node;
+    } else {
+      current = this.head;
+      while (current.next) {
+        current = current.next;
+      }
+      current.next = node;
+    }
+  }
   // get head
+  getHead() {
+    return this.head;
+  }
+  // get last
+  getLast() {
+    let current;
+
+    if (this.head === null) {
+      return this.head;
+    } else {
+      current = this.head;
+      while (current.next) {
+        current = current.next;
+      }
+      return current;
+    }
+  }
+  // get size
+  getSize() {
+    let count = 0;
+    let current;
+
+    if (this.head === null) {
+      return count;
+    } else {
+      current = this.head;
+      count++;
+      while (current.next) {
+        current = current.next;
+        count++;
+      }
+      return count;
+    }
+  }
 }
+
+let list1 = new LinkedList();
+
+list1.addNode(1);
+list1.addNode(5);
+list1.addNode(6);
+list1.addNode(51);
+
+console.log("list1 size", list1.getSize());
+
+let list2 = new LinkedList();
+
+list2.addNode(-51);
+list2.addNode(0);
+list2.addNode(22);
+
+console.log("list2 size", list2.getSize());
+
+// here we actually start building the solution for the original problem
+const mergeTwoLists = (list1, list2) => {
+  let result = new LinkedList();
+
+  // if both lists have no nodes - return null
+  if (!list1 && !list2) {
+    return result;
+    // if only one list has nodes, return the other list
+  } else if (!list1) {
+    return list2;
+  } else if (!list2) {
+    return list1;
+  }
+
+  // if both lists have node(s)
+  let list1Current = list1.head;
+  let list2Current = list2.head;
+
+  while (list1Current?.val || list2Current?.val) {
+    if (list1Current?.val && list2Current?.val) {
+      if (list1Current.val <= list2Current.val) {
+        result.addNode(list1Current);
+        list1Current = list1Current.next;
+      } else {
+        result.addNode(list2Current);
+        list2Current = list2Current.next;
+      }
+    } else {
+      if (list1Current === null) {
+        result.addNode(list2Current);
+        list2Current = list2Current.next;
+      } else {
+        result.addNode(list1Current);
+        list1Current = list1Current.next;
+      }
+    }
+  }
+  console.log(result);
+  console.log("head", result.getHead());
+  console.log("tail", result.getLast());
+  console.log("result size", result.getSize());
+  return result.head;
+};
+
+mergeTwoLists(list1, list2);
