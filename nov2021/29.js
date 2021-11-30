@@ -144,3 +144,9 @@ const mergeTwoLists = (list1, list2) => {
 };
 
 mergeTwoLists(list1, list2);
+
+/*
+I fully fleshed this out on my own, and debugged all errors. I feel much better about this than yesterday's code, and am 
+feeling more comfortable with this data structure. I did not create a test file for this one, but tested all the code within 
+the js file manually.
+*/
