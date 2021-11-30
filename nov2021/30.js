@@ -18,6 +18,7 @@ var removeElement = function (nums, val) {
   let index = 0;
   let count = 0;
   while (index < nums.length) {
+    // if an element is removed the index cannot be incremented or elements would be missed
     if (nums[index] === val) {
       nums.splice(index, 1);
       nums.push("");
@@ -28,6 +29,8 @@ var removeElement = function (nums, val) {
   }
   return nums.length - count;
 };
+
+module.exports = removeElement;
 
 /*
 Runtime: 72 ms, faster than 81.31% of JavaScript online submissions for Remove Element.
