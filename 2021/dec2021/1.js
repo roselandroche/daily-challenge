@@ -40,5 +40,5 @@ Runtime: 84 ms, faster than 62.18% of JavaScript online submissions for Implemen
 Memory Usage: 40.7 MB, less than 34.26% of JavaScript online submissions for Implement strStr().
 
 Notes:
-
+This one felt pretty intuitive, but I want to look into how it could be made more efficient
 */
