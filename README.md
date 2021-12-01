@@ -15,3 +15,7 @@ This repo will serve as a library of code challenge solutions I develop on a dai
 - [x] 28th
 - [x] 29th
 - [x] 30th
+
+### December 2021
+
+- [x] 1st
