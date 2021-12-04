@@ -13,6 +13,9 @@ Note that you must do this in-place without making a copy of the array.
 var moveZeroes = function (nums) {
   let index = 0;
   let count = 0;
+  if (nums.length === 1 && nums[0] === 0) {
+    return nums;
+  }
   while (index < nums.length) {
     if (nums[index] === 0) {
       nums.splice(index, 1);
@@ -24,6 +27,7 @@ var moveZeroes = function (nums) {
   for (let i = 0; i < count; i++) {
     nums.push(0);
   }
+  return nums;
 };
 
 module.exports = moveZeroes;
