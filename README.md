@@ -19,3 +19,5 @@ This repo will serve as a library of code challenge solutions I develop on a dai
 ### December 2021
 
 - [x] 1st
+- [x] 2nd
+- [x] 3rd
