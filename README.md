@@ -24,3 +24,4 @@ This repo will serve as a library of code challenge solutions I develop on a dai
 - [x] 4th
 - [ ] 5th
 - [x] 6th
+- [x] 7th
