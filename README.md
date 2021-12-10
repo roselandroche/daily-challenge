@@ -27,3 +27,4 @@ This repo will serve as a library of code challenge solutions I develop on a dai
 - [x] 7th
 - [x] 8th
 - [x] 9th
+- [x] 10th
