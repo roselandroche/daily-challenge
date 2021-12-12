@@ -29,3 +29,4 @@ This repo will serve as a library of code challenge solutions I develop on a dai
 - [x] 9th
 - [x] 10th
 - [x] 11th
+- [x] 12th
