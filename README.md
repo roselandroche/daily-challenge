@@ -11,10 +11,7 @@ This repo will serve as a library of code challenge solutions I develop on a dai
 
 ### November 2021
 
-- [x] 27th
-- [x] 28th
-- [x] 29th
-- [x] 30th
+- 4/4 (started at the end of the month)
 
 ### December 2021
 
