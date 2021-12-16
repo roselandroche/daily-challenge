@@ -30,3 +30,4 @@ This repo will serve as a library of code challenge solutions I develop on a dai
 - [x] 13th
 - [x] 14th
 - [x] 15th
+- [x] 16th
