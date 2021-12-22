@@ -36,3 +36,4 @@ This repo will serve as a library of code challenge solutions I develop on a dai
 - [x] 19th
 - [x] 20th
 - [x] 21st
+- [x] 22nd
