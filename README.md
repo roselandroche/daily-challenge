@@ -42,7 +42,7 @@ This repo will serve as a library of code challenge solutions I develop on a dai
 - [ ] 25th
 - [x] 26th
 - [x] 27th
-- [ ] 28th
+- [x] 28th
 - [ ] 29th
 - [ ] 30th
 - [ ] 31st
