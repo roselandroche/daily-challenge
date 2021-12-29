@@ -43,6 +43,6 @@ This repo will serve as a library of code challenge solutions I develop on a dai
 - [x] 26th
 - [x] 27th
 - [x] 28th
-- [ ] 29th
+- [x] 29th
 - [ ] 30th
 - [ ] 31st
