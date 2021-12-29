@@ -40,6 +40,6 @@ module.exports = mostWordsFound;
 /*
 Success
  
-Runtime: 103 ms, faster than 14.55% of JavaScript online submissions for Maximum Number of Words Found in Sentences.
-Memory Usage: 40.3 MB, less than 85.91% of JavaScript online submissions for Maximum Number of Words Found in Sentences.
+Runtime: 72 ms, faster than 90.00% of JavaScript online submissions for Maximum Number of Words Found in Sentences.
+Memory Usage: 40.7 MB, less than 60.00% of JavaScript online submissions for Maximum Number of Words Found in Sentences.
 */
