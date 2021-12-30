@@ -44,5 +44,5 @@ This repo will serve as a library of code challenge solutions I develop on a dai
 - [x] 27th
 - [x] 28th
 - [x] 29th
-- [ ] 30th
+- [x] 30th
 - [ ] 31st
