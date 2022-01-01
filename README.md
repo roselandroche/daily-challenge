@@ -11,7 +11,7 @@ This repo will serve as a library of code challenge solutions I develop on a dai
 
 ### 2021 (started at end of Nov)
 
-- 31/35 (started at the end of the month)
+- 31/35
 
 ### January 2022
 
