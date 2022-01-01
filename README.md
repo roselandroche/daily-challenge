@@ -9,17 +9,13 @@ This repo will serve as a library of code challenge solutions I develop on a dai
 - Increase my fluency in JavaScript and Python
 - Discover areas to focus on and improve
 
-### November 2021
+### 2021 (started at end of Nov)
 
-- 4/4 (started at the end of the month)
-
-### December 2021
-
-- 27/31
+- 31/35 (started at the end of the month)
 
 ### January 2022
 
-- [ ] 1st
+- [x] 1st
 - [ ] 2nd
 - [ ] 3rd
 - [ ] 4th
