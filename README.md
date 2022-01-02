@@ -16,7 +16,7 @@ This repo will serve as a library of code challenge solutions I develop on a dai
 ### January 2022
 
 - [x] 1st
-- [ ] 2nd
+- [x] 2nd
 - [ ] 3rd
 - [ ] 4th
 - [ ] 5th
