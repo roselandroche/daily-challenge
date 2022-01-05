@@ -19,7 +19,7 @@ This repo will serve as a library of code challenge solutions I develop on a dai
 - [x] 2nd
 - [x] 3rd
 - [x] 4th
-- [ ] 5th
+- [x] 5th
 - [ ] 6th
 - [ ] 7th
 - [ ] 8th
