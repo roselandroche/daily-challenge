@@ -29,7 +29,7 @@ This repo will serve as a library of code challenge solutions I develop on a dai
 - [x] 12th
 - [x] 13th
 - [ ] 14th
-- [ ] 15th
+- [x] 15th
 - [ ] 16th
 - [ ] 17th
 - [ ] 18th
